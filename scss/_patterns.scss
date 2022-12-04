@@ -60,9 +60,11 @@ p {
         display: flex;
         justify-content: center;
         overflow: hidden;
-
         img {
             transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         button {
             position: absolute;
@@ -100,6 +102,12 @@ p {
                 bottom: 5.7rem;
                 opacity: 1;
             }
+        }
+    }
+
+    @media(max-width: 991px){
+        .image{
+            height: 44rem;
         }
     }
 }
