@@ -246,7 +246,6 @@
     background-position: top center;
     background-repeat: no-repeat;
     overflow: hidden;
-    display: none;
 
     .container {
         display: flex;
@@ -286,6 +285,61 @@
         position: relative;
         left: 110px;
         top: -45px;
+    }
+
+    @media(max-width: 1200px){
+        background-image: none;
+        padding: 6rem 0;
+        .container{
+            flex-direction: column-reverse;
+        }
+        .left{
+            max-width: 100%;
+            text-align: center;
+            .subtitle{
+                justify-content: center;
+            }
+            h2{
+                max-width: 75%;
+                margin: 2rem auto;
+            }
+            .corp{
+                justify-content: center;
+            }
+        }
+        .kratos-atreus{
+            top: 0;
+            left: 0;
+            margin-bottom: 6rem;
+        }
+    }
+    @media(max-width: 991px){
+        .left{
+            h2{
+                max-width: 95%;
+            }
+        }
+    }
+    @media(max-width: 560px){
+        .left{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.6rem;
+                margin-bottom: 4rem;
+            }
+            .corp{
+                flex-direction: column;
+                p{
+                    margin-left: 0;
+                    margin-top: 3rem;
+                }
+            }
+        }
+        .kratos-atreus{
+            margin-bottom: 4rem;
+        }
     }
 }
 
