@@ -345,11 +345,12 @@
 }
 
 .s-characters {
-    padding: 17.6rem;
+    padding-top: 17.6rem;
     padding-bottom: 14.3rem;
     background-image: url("../assets/bg-characters.png");
     background-position: center center;
     overflow: hidden;
+    background-repeat: no-repeat;
 
     .description {
         display: flex;
@@ -398,7 +399,7 @@
             }
         }
     }
-    @media(max-width:560px){
+    @media(max-width: 560px){
         padding: 4rem 0;
         .description{
             .left{
